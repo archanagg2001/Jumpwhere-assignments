@@ -1,6 +1,6 @@
 1.SELECT *
    FROM Emp_Table
-   where DeptNo=10 OR DeptNo=30;
+   WHERE DeptNo=10 OR DeptNo=30;
 
 2.SELECT *
    FROM Dept_Table
@@ -10,12 +10,12 @@
    
 3.SELECT ename
    FROM Emp_Table
-   where Ename LIKE 'S%';
+   WHERE Ename LIKE 'S%';
 
 5.SELECT REPLACE('Sachin','a','#');
 6.SELECT e.Ename 'emp_name', m.Ename 'mgr_name'
    FROM Emp_Table
-   where e.EmpNo=m.Mgr;
+   WHERE e.EmpNo=m.Mgr;
 
 7.SELECT Dname
    FROM d.Dept_Table
@@ -32,7 +32,7 @@
 
 10.SELECT DeptNo
  FROM Dept_Table 
-WHERE Loc='Chennai' IN(DELETE Emp_Table
+  WHERE Loc='Chennai' IN(DELETE Emp_Table
 		           WHERE Dept_Table.DeptNo=Emp_Table.DeptNo AN);
 
 11.SELECT Ename,(sal+commission)AS Gross_salary
