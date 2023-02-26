@@ -84,14 +84,14 @@ order by  salary desc limit 1,1;
 27.SELECT *
      FROM Emp_Table
      WHERE EmpNo=(SELECT Mrg
-                                      FROM Emp_Table
-                                       GROUP BY Mgr);
+                  FROM Emp_Table
+                  GROUP BY Mgr);
 
 28SELECT Ename,Sal,Commission,DeptNo,AGE(CURRENT_DATE,Hire_Dtae) AS Expierence
      FROM Emp_Table
      WHERE EmpNo=(SELECT Mrg
-                                      FROM Emp_Table
-                                       GROUP BY Mgr);
+                  FROM Emp_Table
+                  GROUP BY Mgr);
 29.SELECT EmpNo
      FROM e.Emp_Table,d.Dept_Table
      WHERE Commission<1000 AND Loc='Delhi' AND e.DeptNo=d.DeptNo;
